@@ -414,15 +414,68 @@ function calculateTotalPrice(order) {
  console.log(getEvenNumbers(7, 7)); // [] };*/
 
 
-function checkStorage(storage, item) {
-  const lowerItem = item.toLowerCase();
-  const lowerStorage = storage.map(el => el.toLowerCase());
-  
-  if (lowerStorage.includes(lowerItem)) {
-    return `${lowerItem} is available to order!`;
-  } else {
-    return `Sorry! We are out of stock!`;
-  }
-}
-  
-console.log(checkStorage(["bread", "cheese", "milk", "apples"], "Cheese"));
+ /*    function checkStorage(storage, item) {
+       const lowerItem = item.toLowerCase();
+       const lowerStorage = storage.map(el => el.toLowerCase());
+       
+       if (lowerStorage.includes(lowerItem)) {
+         return `${lowerItem} is available to order!`;
+       } else {
+         return `Sorry! We are out of stock!`;
+       }
+     }
+       
+     console.log(checkStorage(["apple", "plum", "pear"], "plum"));
+     console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
+     console.log(checkStorage(["apple", "plum", "pear"], "pear"));
+     console.log(checkStorage(["apple", "plum", "pear"], "pEAr"));
+     console.log(checkStorage(["apple", "plum", "pear"], "orange"));
+     console.log(checkStorage(["apple", "plum", "pear"], "carrot"));
+*/     
+
+/*     function getCommonElements(array1, array2) {
+       const result = [];
+       for (let i = 0; i < array1.length; i += 1) {
+         if (array2.includes(array1[i])) {
+           result.push(array1[i]);
+         }
+       }
+       return result;
+     }
+     
+     console.log(getCommonElements([1, 2, 3], [2, 4]));
+     console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+     console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+     console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+     console.log(getCommonElements([1, 2, 3], [10, 20, 30]));  
+*/
+
+/*     const planets = ["Earth", "Mars", "Venus"];
+     
+     for (const planet of planets) {
+       console.log(planet);
+     }
+*/
+
+ /*   function calculateTotalPrice(order) {
+      let total = 0;
+    
+      for (const price of order) {
+        total += price;
+      }
+    
+      return total; 
+    }
+    
+    console.log(calculateTotalPrice([12, 85, 37, 4]));
+    console.log(calculateTotalPrice([164, 48, 291]));
+    console.log(calculateTotalPrice([412, 371, 94, 63, 176]));  
+    console.log(calculateTotalPrice([]));
+*/
+/*    function sum(a, b) {
+      console.log(arguments);
+      return a + b;
+    }
+    
+    sum(2, 5);
+*/    
