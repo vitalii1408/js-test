@@ -75,7 +75,7 @@ console.log(checkStorage(200, 20));
 console.log(checkStorage(250, 200));
 console.log(checkStorage(150, 0));
 console.log(checkStorage(80, 80));*/
-/тернальний оператор/
+
 /*const a=5;
 const b=10;
 const max = a > b ? "max" : "min";
@@ -348,4 +348,81 @@ console.log(findNumber(16, 35, 7));*/
 
 console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
 console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
-console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
+console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"*/ 
+
+/*const planets = ["Earth", "Mars", "Venus"];
+planets.push("Jupiter");
+console.log(planets); // ["Earth", "Mars", "Venus", "Jupiter"]
+
+const tags = [];
+for (let i=0; i<3; i++) {
+  tags.push(`tag-${i}`);
+}
+console.log(tags); // ["tag-0", "tag-1", "tag-2"]*/
+
+/*function createArrayOfNumbers(min, max) {
+  const numbers = [];
+
+  for (let i = min; i <= max; i += 1) {
+    numbers.push(i);
+  }
+
+  return numbers;
+}
+
+console.log(createArrayOfNumbers(1, 3)); // [1, 2, 3]
+console.log(createArrayOfNumbers(14, 17)); // [14, 15, 16, 17]
+console.log(createArrayOfNumbers(29, 34)); 
+
+// [29, 30, 31, 32, 33, 34]  
+
+const planets = ["Earth", "Mars", "Venus"];
+
+for (let i = 0; i < planets.length; i += 1) {
+  console.log(planets[i]);
+}
+
+function calculateTotalPrice(order) {
+  let total = 0;
+
+  for (let i = 0; i < order.length; i += 1) {
+    total += order[i];
+  }
+
+  return total;
+}
+ console.log(calculateTotalPrice([12, 85, 37, 4]));
+ console.log(calculateTotalPrice([164, 48, 291]));
+ console.log(calculateTotalPrice([412, 371, 94, 63, 176])); */
+ 
+ 
+ /*function getEvenNumbers(start, end) {
+  const evenNumbers = [];
+
+  for (let i = start; i <= end; i += 1) {
+    if (i % 2 === 0) {
+      evenNumbers.push(i);
+    }
+  }
+
+  return evenNumbers;
+}
+ console.log(getEvenNumbers(2, 5)); // [2, 4]
+ console.log(getEvenNumbers(3, 11)); // [4, 6, 8, 10]
+ console.log(getEvenNumbers(6, 12)); // [6, 8, 10, 12]
+ console.log(getEvenNumbers(8, 8)); // [8]
+ console.log(getEvenNumbers(7, 7)); // [] };*/
+
+
+function checkStorage(storage, item) {
+  const lowerItem = item.toLowerCase();
+  const lowerStorage = storage.map(el => el.toLowerCase());
+  
+  if (lowerStorage.includes(lowerItem)) {
+    return `${lowerItem} is available to order!`;
+  } else {
+    return `Sorry! We are out of stock!`;
+  }
+}
+  
+console.log(checkStorage(["bread", "cheese", "milk", "apples"], "Cheese"));
