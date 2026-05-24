@@ -437,3 +437,11 @@ const lastThreeEls = fruits.slice(-3);
 console.log(firstTwoEls);
 console.log(nonExtremeEls);
 console.log(lastThreeEls);  */
+const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+const newClients = ["Peach", "Houston"];
+const allClients = oldClients.concat(newClients);
+console.log(allClients);  
+const age = allClients.indexOf("Poly");
+console.log(age);
+const age2 = allClients.indexOf("Monkong");
+console.log(age2);  
