@@ -341,11 +341,88 @@ console.log(findNumber(6, 9, 4));
 console.log(findNumber(16, 35, 7));*/
 
 
-function makeTransaction(quantity, pricePerDroid) {
+/*function makeTransaction(quantity, pricePerDroid) {
   const totalPrice = quantity * pricePerDroid;
   return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
 }
 
 console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
 console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
-console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
+console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"*/
+
+/*const user='Mango';
+
+for(let i = 0; i < user.length; i++){
+  console.log(user[i]);
+};
+
+console.log(after);
+
+let a = 10;*/
+
+/*const a = 10;
+const b = 100;
+
+for (let i = a; i < b; i++) {
+  if (i % 5 === 0) {
+    console.log(i);
+  } 
+}
+*/
+
+
+/*const planets = ["Earth", "Mars", "Venus"];
+const lastElementIndex = planets.length -1;
+const age = planets[lastElementIndex];
+console.log(age);*/
+
+/*function getLastElementMeta(array) {
+  return [array.length - 1, array[array.length - 1]];
+}
+
+console.log(getLastElementMeta(["apple", "peach", "pear", "banana"]));
+console.log(getLastElementMeta(["apple", "peach", "pear"]));
+console.log(getLastElementMeta(["apple", "peach"]));
+console.log(getLastElementMeta(["apple"]));*/
+
+/*function getExtremeElements(array) {
+  return [array[0], array[array.length -1]];
+}
+
+console.log(getExtremeElements([1, 2, 3, 4, 5]));
+console.log(getExtremeElements(["Earth", "Mars", "Venus"]))
+console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));*/
+
+/*let a = [4];
+const b = a;
+ console.log(a);
+ console.log(b);*/
+
+ /*function getLength(array) {
+  return array.join("").length;
+ }
+
+ console.log(getLength(["Mango", "hurries", "to", "the", "train"]));
+  console.log(getLength(["M", "a", "n", "g", "o"]));
+  console.log(getLength(["top", "picks", "for", "you"]));*/
+
+  /*const a = 'Mango';
+  b = a.split("");
+  console.log(a);
+  console.log(b); 
+  const c = "java script essentials";
+  const d = c.split(" ");
+  console.log(c);
+  console.log(d); */
+
+  function calculateEngravingPrice(message, pricePerWord) {
+  const words = message.split(" ");
+  const totalPrice = words.length * pricePerWord;
+  return totalPrice;
+}
+
+console.log(calculateEngravingPrice("JavaScript is in my blood", 10));    
+console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
+console.log(calculateEngravingPrice("Web-development is creative work", 40));
+console.log(calculateEngravingPrice("Web-development is creative work", 20));
+  
