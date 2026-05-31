@@ -479,3 +479,271 @@ function calculateTotalPrice(order) {
     
     sum(2, 5);
 */    
+   
+
+//const produkt = {
+//  name: "Генератор захисного поля",
+//  price: 1000,
+//  quantity: 5,
+//  category: "Товари для дому",
+//  isOnSale: true,
+//  details: {
+//    weight: "1kg",
+//    color: "silver",
+//    dimensions: "10x10x10cm"
+//  }   
+//}
+//
+//console.log(produkt.name);
+//console.log(produkt.price);
+//console.log(produkt.quantity);
+//console.log(produkt.category);
+//console.log(produkt.isOnSale);
+//console.log(produkt.details);  
+
+//  const apartment = {
+//    imgUrl: "https://via.placeholder.com/640x480",
+//    descr: "Spacious apartment in the city center",
+//    rating: 4,
+//    price: 2153,
+//    tags: ["premium", "promoted", "top"],
+//  }
+//  
+//  console.log(apartment.imgUrl);
+//  console.log(apartment.descr);
+//  console.log(apartment.rating);
+//  console.log(apartment.price);
+//  console.log(apartment.tags);  
+
+//    const apartment = {
+//      imgUrl: "https://via.placeholder.com/640x480",
+//      descr: "Spacious apartment in the city center",
+//      rating: 4,
+//      price: 2153,
+//      tags: ["premium", "promoted", "top"],
+//      owner: {
+//        name: "Henry",
+//        phone: "982-126-1588",
+//        email: "henry.carter@aptmail.com"
+//      }
+//    };
+
+//  const book = {
+//    title: "The Last Kingdom",
+//    author: "Bernard Cornwell",
+//    genres: ["historical prose", "adventure"],
+//    isPublic: true,
+//    rating: 8.38,
+//  };
+//  
+//  const bookTitle = book.title;
+//  console.log(bookTitle);
+//  
+//  const bookGenres = book.genres;
+//  console.log(bookGenres);
+//  
+//  const bookReting = book.rating;
+//  console.log(bookReting);
+
+
+//  const apartment = {
+//    imgUrl: "https://via.placeholder.com/640x480",
+//    descr: "Spacious apartment in the city center",
+//    rating: 4,
+//    price: 2153,
+//    tags: ["premium", "promoted", "top"],
+//  };
+//  
+//  const aptRating = apartment.rating;
+//  const aptDescr = apartment.descr;
+//  const aptPrice = apartment.price;
+//  const aptTags = apartment.tags;
+
+// ------------------------------- Доступ до вкладених властивостей---------------------------------------
+
+//   const user = {
+//     name: "Jacques Gluke",
+//     tag: "jgluke",
+//     location: {
+//       country: "Jamaica",
+//       city: "Ocho Rios",
+//     },
+//     hobbies: ["swimming", "music", "sci-fi"],
+//   };
+//   
+//   //console.log(user.location.country);
+//   const country = user.location.country;
+//   console.log(country);
+//   
+//   const hobbies = user.hobbies[0];
+//   console.log(hobbies);
+
+//  const apartment = {
+//    imgUrl: "https://via.placeholder.com/640x480",
+//    descr: "Spacious apartment in the city center",
+//    rating: 4,
+//    price: 2153,
+//    tags: ["premium", "promoted", "top"],
+//    owner: {
+//      name: "Henry",
+//      phone: "982-126-1588",
+//      email: "henry.carter@aptmail.com",
+//    },
+//  };
+//  
+//  const ownerName = apartment.owner.name;
+//  const ownerPhone = apartment.owner.phone;
+//  const ownerEmail = apartment.owner.email;
+//  const numberOfTags = apartment.tags.length;
+//  const lastTag = apartment.tags[apartment.tags.length - 1];
+//  
+//  
+//  console.log(ownerName);
+//  console.log(ownerPhone);
+//  console.log(ownerEmail);
+//  console.log(numberOfTags);
+//  console.log(lastTag); 
+
+//  const book = {
+//    title: "The Last Kingdom",
+//    author: "Bernard Cornwell",
+//    genres: ["historical prose", "adventure"],
+//    isPublic: true,
+//    rating: 8.38,
+//  };
+//  
+//  console.log(book['author']);
+//  console.log(book.title);
+//  console.log(book['genres']);
+//  console.log(book.isPublic);
+
+//  const apartment = {
+//    imgUrl: "https://via.placeholder.com/640x480",
+//    descr: "Spacious apartment in the city center",
+//    rating: 4,
+//    price: 2153,
+//    tags: ["premium", "promoted", "top"],
+//  };
+//  
+//  const aptRating = apartment["rating"];
+//  const aptDescr = apartment["descr"];
+//  const aptPrice = apartment["price"];
+//  const aptTags = apartment["tags"];
+//  
+//  console.log(aptRating);
+//  console.log(aptDescr);
+//  console.log(aptPrice);
+//  console.log(aptTags); 
+
+
+//-------------------------------Зміна значення властивостей----------------------------------------
+
+//   const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     isPublic: true,
+//     rating: 8.38,
+//   };
+//   
+//   book.rating = 9;
+//   console.log(book.rating);
+//   book.isPublic = false;
+//   console.log(book.isPublic);
+//   book.genres.push("drama");
+//   console.log(book.genres);   
+
+//  const apartment = {
+//    imgUrl: "https://via.placeholder.com/640x480",
+//    descr: "Spacious apartment in the city center",
+//    rating: 4,
+//    price: 2153,
+//    tags: ["premium", "promoted", "top"],
+//    owner: {
+//      name: "Henry",
+//      phone: "982-126-1588",
+//      email: "henry.carter@aptmail.com",
+//    },
+//  };
+//  
+//  apartment.price = 5000;
+//  apartment.rating = 4.7;
+//  apartment.owner.name = "Henry Sibola";
+//  apartment.tags.push("trusted");
+//  console.log(apartment.price);
+//  console.log(apartment.rating);
+//  console.log(apartment.owner.name);
+//  console.log(apartment.tags);
+
+//  const book = {
+//    title: "The Last Kingdom",
+//    author: "Bernard Cornwell",
+//    genres: ["historical prose", "adventure"],
+//    isPublic: true,
+//    rating: 8.38,
+//  };
+//  
+//  book.pageCount = 836;
+//  book.originalLanguage = "en";
+//  book.translations = ["ua", "ru"];
+//  book.price = {
+//    hardcover: 39,
+//    softcover: 29,
+//  };
+//  
+//  console.log(book.pageCount); // 836
+//  console.log(book.originalLanguage); // "en"
+//  console.log(book.translations); // ["ua", "ru"]
+//  console.log(book); // { hardcover: 39, softcover: 29 }
+
+//  const apartment = {
+//    imgUrl: "https://via.placeholder.com/640x480",
+//    descr: "Spacious apartment in the city center",
+//    rating: 4.7,
+//    price: 5000,
+//    tags: ["premium", "promoted", "top", "trusted"],
+//    owner: {
+//      name: "Henry Sibola",
+//      phone: "982-126-1588",
+//      email: "henry.carter@aptmail.com",
+//    },
+//  };
+//  
+//  
+//  apartment.area = 60;
+//  apartment.rooms = 3;
+//  apartment.location = {
+//    country: "Jamaica",
+//    city: "Ocho Rios",
+//  };
+//  
+//  console.log(apartment.area);
+//  console.log(apartment.rooms);
+//  console.log(apartment.location);
+//  
+//  const name = "Repair Droid";
+//  const price = 2500;
+//  const image = "https://via.placeholder.com/640x480";
+//  const tags = ["on sale", "trending", "best buy"];
+//  
+//  const product = {
+//    name,
+//    price,
+//    image,
+//    tags, 
+//  };
+//  
+//  console.log(product);
+//  console.log(product.name);
+//  console.log(product.price);
+//  console.log(product.image);
+//  console.log(product.tags);  
+
+//   const emailInputName = "email";
+//   const passwordInputName = "password";
+//   
+//   const credentials = {
+//     [emailInputName]: "henry.carter@aptmail.com",
+//     [passwordInputName]: "jqueryismyjam",
+//   };
+
