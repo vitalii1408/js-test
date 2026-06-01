@@ -747,3 +747,211 @@ function calculateTotalPrice(order) {
 //     [passwordInputName]: "jqueryismyjam",
 //   };
 
+//  const book = {
+//    title: "The Last Kingdom",
+//    author: "Bernard Cornwell",
+//    genres: ["historical prose", "adventure"],
+//    rating: 8.38,
+//  };
+//  
+//  for (const key in book) {
+//    console.log(key); // Ключ
+//    console.log(book[key]);  // Значення властивості з таким ключем
+//  }
+
+//  const apartment = {
+//    descr: "Spacious apartment in the city center",
+//    rating: 4,
+//    price: 2153,
+//  };
+//  
+//  const keys = [];
+//  const values = [];
+//  for (const key in apartment) {
+//    keys.push(key);
+//    values.push(apartment[key]);
+//  }
+//  
+//  console.log(keys); // ["descr", "rating", "price"]
+//  console.log(values); // ["Spacious apartment in the city center", 4, 2153]
+
+//  const book = {
+//    title: 'The Last Kingdom',
+//    author: 'Bernard Cornwell',
+//    genres: ['historical prose', 'adventure'],
+//    isPublic: true,
+//    rating: 8.38,
+//  };
+//  
+//  const keys = Object.keys(book);
+//  //console.log(keys);
+//  for(const key of keys) {
+//    console.log(key);
+//  }
+
+
+//  const apartment = {
+//    descr: "Spacious apartment in the city center",
+//    rating: 4,
+//    price: 2153,
+//  };
+//  const values = [];
+//  const keys = Object.keys(apartment);
+//  
+//  for(const key of keys) {
+//    values.push(apartment[key]);
+//  }
+//  console.log(values);
+
+//  function countProps(object) {
+//    re
+//turn Object.keys(object).length;
+//  }
+
+
+//  const book = {
+//    title: "The Last Kingdom",
+//    author: "Bernard Cornwell",
+//    rating: 8.38,
+//  };
+//  const keys = Object.keys(book);
+//  console.log(keys);
+//  
+//  const values = Object.values(book);
+//  console.log(values);
+
+//-----------------------------------------------------------------------------
+
+// 1. Виведи всі ключі
+// 2. Виведи всі значення
+// 3. Порахуй суму всіх числових значень
+
+//  const user = {
+//    name: "Іван",
+//    age: 25,
+//    city: "Київ",
+//    isOnline: true,
+//  };
+//   const keys = Object.keys(user);
+//    console.log(keys);
+//  const  value = Object.values(user);
+//  console.log(value); 
+//  const length = Object.keys(user).length;
+//  console.log(length);
+
+//-------------------------------------------------------------------------------------
+
+// 1. Виведи всі ключі
+// 2. Виведи всі значення
+// 3. Виведи тільки перший ключ
+// 4. Виведи тільки останнє значення
+
+//  const product = {
+//    name: "Телефон",
+//    price: 500,
+//    brand: "Samsung",
+//    inStock: true,
+//  };
+//  
+//  const keys = Object.keys(product);
+//  console.log(keys);
+//  const length = Object.keys(product)[0];
+//  console.log(length);
+//  const lastValue = Object.values(product)[Object.values(product).length - 1];
+//  console.log(lastValue);
+//  const values = Object.values(product);
+//  console.log(values);
+
+//---------------------------------------------------------------------------------------------------
+
+// 1. Виведи всі ключі
+// 2. Виведи всі значення
+// 3. Порахуй суму всіх числових значень
+
+//  const movie = {
+//    title: "Inception",
+//    director: "Christopher Nolan",
+//    year: 2010,
+//    rating: 9.2,
+//  };
+//  
+//  const keys =Object.keys(movie);
+//  console.log(keys);
+//  const values = Object.values(movie);
+//  console.log(values);
+//  let sum = 0;
+//  for (const value of values) {
+//    if (typeof value === "number") {
+//      sum += value;
+//    }
+//  }
+//  console.log(sum);
+
+//------------------------------------------------------------------------------------- 
+
+
+//  const apartment = {
+//    descr: "Spacious apartment in the city center",
+//    rating: 4,
+//    price: 2153,
+//  };
+//  
+//  const keys = apartment;
+//  const values = apartment;
+//  apartment.keys = Object.keys(apartment);
+//  apartment.values = Object.values(apartment);
+//  
+//  console.log(apartment.keys);
+//  console.log(apartment.values);    
+
+//--------------------------------------------------------------------------------------------------
+
+//  function countTotalSalary(salaries) {
+//    let totalSalary = 0;
+//    const salaryValues = Object.values(salaries);
+//    for (const salary of salaryValues) {
+//      totalSalary += salary;
+//    }
+//    return totalSalary;
+//  }
+//  
+//  console.log(countTotalSalary({})); 
+//  console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+//  console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
+
+//------------------------------------------------------------------------------------------------
+
+//  const books = [
+//    {
+//      title: "The Last Kingdom",
+//      author: "Bernard Cornwell",
+//      rating: 8.38,
+//    },
+//    {
+//      title: "Beside Still Waters",
+//      author: "Robert Sheckley",
+//      rating: 8.51,
+//    },
+//    {
+//      title: "The Tell-Tale Heart",
+//      author: "Edgar Allan Poe",
+//      rating: 7.75,
+//    }
+//  ];
+//  
+//  for (const book of books) {
+//    //console.log(book); // Об'єкт книги
+//    //console.log(book.title); // Назва
+//    //console.log(book.author); // Автор
+//    //console.log(book.rating); // Рейтинг
+//  }
+//  
+//  for (const book of books) {
+//    //console.log(book.title);
+//  }
+//  console.log(firstBook = books[0]);
+//  console.log(firstBook.title);
+//  console.log(firstBook.author);
+
+//==================================================================================================
+
