@@ -437,11 +437,25 @@ const lastThreeEls = fruits.slice(-3);
 console.log(firstTwoEls);
 console.log(nonExtremeEls);
 console.log(lastThreeEls);  */
-const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
-const newClients = ["Peach", "Houston"];
-const allClients = oldClients.concat(newClients);
-console.log(allClients);  
-const age = allClients.indexOf("Poly");
-console.log(age);
-const age2 = allClients.indexOf("Monkong");
-console.log(age2);  
+
+function createReversedArray() {
+  return Array.from(arguments).toReversed();
+}
+console.log(createReversedArray(12, 85, 37, 4));
+console.log(createReversedArray(164, 48, 291));
+console.log(createReversedArray(412, 371, 94, 63, 176));
+console.log(createReversedArray());
+
+// function calculateTax(amount, taxRate = 0.2) {
+//  const taxAmount = amount * taxRate;
+//  return taxAmount;
+// }
+//  console.log(calculateTax(100, 0.1)); // 10
+//  console.log(calculateTax(200, 0.1)); // 20
+//  console.log(calculateTax(100, 0.2)); 
+//  console.log(calculateTax(200, 0.2)); 
+//  console.log(calculateTax(100, 0.3)); 
+// //console.log(calculateTax(200, 0.3)); 
+//  console.log(calculateTax(200));
+
+//=========================================================
