@@ -1338,3 +1338,100 @@ const b = a;
 //  console.log(adults); // [{ name: "Іван", age: 25 }, { name: "Олег", age: 30 }]
 
 //==============================================================================
+
+// Окремо
+//  function eatPizza(pizzaName) {
+//    console.log(`Eating pizza ${pizzaName}`);
+//  }
+//  
+//  // І потім передавати
+//  eatPizza("Ultracheese");
+
+//==============================================================================
+
+//  makePizza("Ultracheese", function eatPizza(pizzaName) {
+//    console.log(`Eating pizza ${pizzaName}`);
+//  });
+//  
+//  
+//  makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//    console.log(`Delivering pizza ${pizzaName}`);
+//  });
+//  
+//  function makePizza(pizzaName, callback) {
+//    console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//    callback(pizzaName);
+//  }
+
+//==============================================================================
+
+//  const numbers = [5, 10, 15, 20, 25];
+//  
+//  // Класичний for
+//  for (let i = 0; i < numbers.length; i += 1) {
+//    console.log(`Index ${i}, value ${numbers[i]}`);
+//  }
+//  
+//  // Перебираючий метод forEach
+//  numbers.forEach(function (number, index) {
+//    console.log(`Index ${index}, value ${number}`);
+//  });
+
+//==============================================================================
+
+//  const fruits = ["apple", "banana", "orange", "mango"];
+//  
+//  fruits.forEach(function (fruit) {
+//    console.log(`Фрукт: ${fruit}`);
+//  })
+
+//==============================================================================
+
+//  const prices = [100, 200, 300, 400, 500];
+//  prices.forEach(function (price, index) {
+//    console.log(`Товар ${index + 1} коштує ${price} грн`);
+//  });
+
+//==============================================================================
+
+//  const users = [
+//    { name: "Іван", age: 25 },
+//    { name: "Марія", age: 30 },
+//    { name: "Олег", age: 22 },
+//  ];
+//  users.forEach(function (user) {
+//  console.log(` ${user.name} має  ${user.age} років`); 
+//  })
+
+//==============================================================================
+
+//  const products = [
+//    { name: "Ноутбук", price: 1500, inStock: true },
+//    { name: "Телефон", price: 800, inStock: false },
+//    { name: "Планшет", price: 600, inStock: true },
+//    { name: "Навушники", price: 200, inStock: false },
+//  ];
+//  
+//  products.forEach(function (product) {
+//    if (product.inStock) {
+//      console.log(`${product.name} - ${product.price} грн`);
+//    }
+//  });
+
+//==============================================================================  
+
+//  const orders = [
+//    { id: 1, product: "Піца", status: "delivered" },
+//    { id: 2, product: "Суші", status: "pending" },
+//    { id: 3, product: "Бургер", status: "delivered" },
+//    { id: 4, product: "Паста", status: "pending" },
+//  ];
+//  
+//  orders.forEach(function (order) {
+//    if (order.status === 'delivered') {
+//      console.log(`Замовлення ${order.id}: - ${order.product} доставлено`);
+//    }
+//  })
+
+//=============================================================================
+
