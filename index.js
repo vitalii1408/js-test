@@ -1251,14 +1251,16 @@ const b = a;
   console.log(c);
   console.log(d); */
 
-  function calculateEngravingPrice(message, pricePerWord) {
-  const words = message.split(" ");
-  const totalPrice = words.length * pricePerWord;
-  return totalPrice;
-}
-
-console.log(calculateEngravingPrice("JavaScript is in my blood", 10));    
-console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
-console.log(calculateEngravingPrice("Web-development is creative work", 40));
-console.log(calculateEngravingPrice("Web-development is creative work", 20));
+//  function calculateEngravingPrice(message, pricePerWord) {
+//  const words = message.split(" ");
+//  const totalPrice = words.length * pricePerWord;
+//  return totalPrice;
+//  }
+//  
+//  console.log(calculateEngravingPrice("JavaScript is in my blood", 10));    
+//  console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
+//  console.log(calculateEngravingPrice("Web-development is creative work", 40));
+//  console.log(calculateEngravingPrice("Web-development is creative work", 20));
   
+//  ==============================================================================
+
