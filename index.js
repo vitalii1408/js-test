@@ -1208,1102 +1208,229 @@ console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 cred
 console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
 console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"*/
 /*const planets = ["Earth", "Mars", "Venus"];
-planets.push("Jupiter");
-console.log(planets); // ["Earth", "Mars", "Venus", "Jupiter"]
+const lastElementIndex = planets.length -1;
+const age = planets[lastElementIndex];
+console.log(age);*/
 
-const tags = [];
-for (let i=0; i<3; i++) {
-  tags.push(`tag-${i}`);
-}
-console.log(tags); // ["tag-0", "tag-1", "tag-2"]*/
-/*function createArrayOfNumbers(min, max) {
-  const numbers = [];
-
-  for (let i = min; i <= max; i += 1) {
-    numbers.push(i);
-  }
-
-  return numbers;
+/*function getLastElementMeta(array) {
+  return [array.length - 1, array[array.length - 1]];
 }
 
-console.log(createArrayOfNumbers(1, 3)); // [1, 2, 3]
-console.log(createArrayOfNumbers(14, 17)); // [14, 15, 16, 17]
-console.log(createArrayOfNumbers(29, 34)); 
+console.log(getLastElementMeta(["apple", "peach", "pear", "banana"]));
+console.log(getLastElementMeta(["apple", "peach", "pear"]));
+console.log(getLastElementMeta(["apple", "peach"]));
+console.log(getLastElementMeta(["apple"]));*/
 
-// [29, 30, 31, 32, 33, 34]  
-
-const planets = ["Earth", "Mars", "Venus"];
-
-for (let i = 0; i < planets.length; i += 1) {
-  console.log(planets[i]);
+/*function getExtremeElements(array) {
+  return [array[0], array[array.length -1]];
 }
 
-function calculateTotalPrice(order) {
-  let total = 0;
+console.log(getExtremeElements([1, 2, 3, 4, 5]));
+console.log(getExtremeElements(["Earth", "Mars", "Venus"]))
+console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));*/
 
-  for (let i = 0; i < order.length; i += 1) {
-    total += order[i];
-  }
+/*let a = [4];
+const b = a;
+ console.log(a);
+ console.log(b);*/
 
-  return total;
-}
- console.log(calculateTotalPrice([12, 85, 37, 4]));
- console.log(calculateTotalPrice([164, 48, 291]));
- console.log(calculateTotalPrice([412, 371, 94, 63, 176])); */
-/*function getEvenNumbers(start, end) {
-  const evenNumbers = [];
+ /*function getLength(array) {
+  return array.join("").length;
+ }
 
-  for (let i = start; i <= end; i += 1) {
-    if (i % 2 === 0) {
-      evenNumbers.push(i);
-    }
-  }
+ console.log(getLength(["Mango", "hurries", "to", "the", "train"]));
+  console.log(getLength(["M", "a", "n", "g", "o"]));
+  console.log(getLength(["top", "picks", "for", "you"]));*/
 
-  return evenNumbers;
-}
- console.log(getEvenNumbers(2, 5)); // [2, 4]
- console.log(getEvenNumbers(3, 11)); // [4, 6, 8, 10]
- console.log(getEvenNumbers(6, 12)); // [6, 8, 10, 12]
- console.log(getEvenNumbers(8, 8)); // [8]
- console.log(getEvenNumbers(7, 7)); // [] };*/
-/*    function checkStorage(storage, item) {
-       const lowerItem = item.toLowerCase();
-       const lowerStorage = storage.map(el => el.toLowerCase());
-       
-       if (lowerStorage.includes(lowerItem)) {
-         return `${lowerItem} is available to order!`;
-       } else {
-         return `Sorry! We are out of stock!`;
-       }
-     }
-       
-     console.log(checkStorage(["apple", "plum", "pear"], "plum"));
-     console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
-     console.log(checkStorage(["apple", "plum", "pear"], "pear"));
-     console.log(checkStorage(["apple", "plum", "pear"], "pEAr"));
-     console.log(checkStorage(["apple", "plum", "pear"], "orange"));
-     console.log(checkStorage(["apple", "plum", "pear"], "carrot"));
-*/
-/*     function getCommonElements(array1, array2) {
-       const result = [];
-       for (let i = 0; i < array1.length; i += 1) {
-         if (array2.includes(array1[i])) {
-           result.push(array1[i]);
-         }
-       }
-       return result;
-     }
-     
-     console.log(getCommonElements([1, 2, 3], [2, 4]));
-     console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
-     console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
-     console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
-     console.log(getCommonElements([1, 2, 3], [10, 20, 30]));  
-*/
-/*     const planets = ["Earth", "Mars", "Venus"];
-     
-     for (const planet of planets) {
-       console.log(planet);
-     }
-*/
-/*   function calculateTotalPrice(order) {
-      let total = 0;
-    
-      for (const price of order) {
-        total += price;
-      }
-    
-      return total; 
-    }
-    
-    console.log(calculateTotalPrice([12, 85, 37, 4]));
-    console.log(calculateTotalPrice([164, 48, 291]));
-    console.log(calculateTotalPrice([412, 371, 94, 63, 176]));  
-    console.log(calculateTotalPrice([]));
-*/
-/*    function sum(a, b) {
-      console.log(arguments);
-      return a + b;
-    }
-    
-    sum(2, 5);
-*/
-//const produkt = {
-//  name: "Генератор захисного поля",
-//  price: 1000,
-//  quantity: 5,
-//  category: "Товари для дому",
-//  isOnSale: true,
-//  details: {
-//    weight: "1kg",
-//    color: "silver",
-//    dimensions: "10x10x10cm"
+  /*const a = 'Mango';
+  b = a.split("");
+  console.log(a);
+  console.log(b); 
+  const c = "java script essentials";
+  const d = c.split(" ");
+  console.log(c);
+  console.log(d); */
+
+//  function calculateEngravingPrice(message, pricePerWord) {
+//  const words = message.split(" ");
+//  const totalPrice = words.length * pricePerWord;
+//  return totalPrice;
 //  }
-//}
-//
-//console.log(produkt.name);
-//console.log(produkt.price);
-//console.log(produkt.quantity);
-//console.log(produkt.category);
-//console.log(produkt.isOnSale);
-//console.log(produkt.details);
-//  const apartment = {
-//    imgUrl: "https://via.placeholder.com/640x480",
-//    descr: "Spacious apartment in the city center",
-//    rating: 4,
-//    price: 2153,
-//    tags: ["premium", "promoted", "top"],
+//  
+//  console.log(calculateEngravingPrice("JavaScript is in my blood", 10));    
+//  console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
+//  console.log(calculateEngravingPrice("Web-development is creative work", 40));
+//  console.log(calculateEngravingPrice("Web-development is creative work", 20));
+  
+//  ==============================================================================
+
+//  function makeCoffee() {
+//    console.log("Кава готова!");
 //  }
-//
-//  console.log(apartment.imgUrl);
-//  console.log(apartment.descr);
-//  console.log(apartment.rating);
-//  console.log(apartment.price);
-//  console.log(apartment.tags);
-//    const apartment = {
-//      imgUrl: "https://via.placeholder.com/640x480",
-//      descr: "Spacious apartment in the city center",
-//      rating: 4,
-//      price: 2153,
-//      tags: ["premium", "promoted", "top"],
-//      owner: {
-//        name: "Henry",
-//        phone: "982-126-1588",
-//        email: "henry.carter@aptmail.com"
-//      }
-//    };
-//  const book = {
-//    title: "The Last Kingdom",
-//    author: "Bernard Cornwell",
-//    genres: ["historical prose", "adventure"],
-//    isPublic: true,
-//    rating: 8.38,
-//  };
-//
-//  const bookTitle = book.title;
-//  console.log(bookTitle);
-//
-//  const bookGenres = book.genres;
-//  console.log(bookGenres);
-//
-//  const bookReting = book.rating;
-//  console.log(bookReting);
-//  const apartment = {
-//    imgUrl: "https://via.placeholder.com/640x480",
-//    descr: "Spacious apartment in the city center",
-//    rating: 4,
-//    price: 2153,
-//    tags: ["premium", "promoted", "top"],
-//  };
-//
-//  const aptRating = apartment.rating;
-//  const aptDescr = apartment.descr;
-//  const aptPrice = apartment.price;
-//  const aptTags = apartment.tags;
-// ------------------------------- Доступ до вкладених властивостей---------------------------------------
-//   const user = {
-//     name: "Jacques Gluke",
-//     tag: "jgluke",
-//     location: {
-//       country: "Jamaica",
-//       city: "Ocho Rios",
-//     },
-//     hobbies: ["swimming", "music", "sci-fi"],
-//   };
-//
-//   //console.log(user.location.country);
-//   const country = user.location.country;
-//   console.log(country);
-//
-//   const hobbies = user.hobbies[0];
-//   console.log(hobbies);
-//  const apartment = {
-//    imgUrl: "https://via.placeholder.com/640x480",
-//    descr: "Spacious apartment in the city center",
-//    rating: 4,
-//    price: 2153,
-//    tags: ["premium", "promoted", "top"],
-//    owner: {
-//      name: "Henry",
-//      phone: "982-126-1588",
-//      email: "henry.carter@aptmail.com",
-//    },
-//  };
-//
-//  const ownerName = apartment.owner.name;
-//  const ownerPhone = apartment.owner.phone;
-//  const ownerEmail = apartment.owner.email;
-//  const numberOfTags = apartment.tags.length;
-//  const lastTag = apartment.tags[apartment.tags.length - 1];
-//
-//
-//  console.log(ownerName);
-//  console.log(ownerPhone);
-//  console.log(ownerEmail);
-//  console.log(numberOfTags);
-//  console.log(lastTag);
-//  const book = {
-//    title: "The Last Kingdom",
-//    author: "Bernard Cornwell",
-//    genres: ["historical prose", "adventure"],
-//    isPublic: true,
-//    rating: 8.38,
-//  };
-//
-//  console.log(book['author']);
-//  console.log(book.title);
-//  console.log(book['genres']);
-//  console.log(book.isPublic);
-//  const apartment = {
-//    imgUrl: "https://via.placeholder.com/640x480",
-//    descr: "Spacious apartment in the city center",
-//    rating: 4,
-//    price: 2153,
-//    tags: ["premium", "promoted", "top"],
-//  };
-//
-//  const aptRating = apartment["rating"];
-//  const aptDescr = apartment["descr"];
-//  const aptPrice = apartment["price"];
-//  const aptTags = apartment["tags"];
-//
-//  console.log(aptRating);
-//  console.log(aptDescr);
-//  console.log(aptPrice);
-//  console.log(aptTags);
-//-------------------------------Зміна значення властивостей----------------------------------------
-//   const book = {
-//     title: "The Last Kingdom",
-//     author: "Bernard Cornwell",
-//     genres: ["historical prose", "adventure"],
-//     isPublic: true,
-//     rating: 8.38,
-//   };
-//
-//   book.rating = 9;
-//   console.log(book.rating);
-//   book.isPublic = false;
-//   console.log(book.isPublic);
-//   book.genres.push("drama");
-//   console.log(book.genres);
-//  const apartment = {
-//    imgUrl: "https://via.placeholder.com/640x480",
-//    descr: "Spacious apartment in the city center",
-//    rating: 4,
-//    price: 2153,
-//    tags: ["premium", "promoted", "top"],
-//    owner: {
-//      name: "Henry",
-//      phone: "982-126-1588",
-//      email: "henry.carter@aptmail.com",
-//    },
-//  };
-//
-//  apartment.price = 5000;
-//  apartment.rating = 4.7;
-//  apartment.owner.name = "Henry Sibola";
-//  apartment.tags.push("trusted");
-//  console.log(apartment.price);
-//  console.log(apartment.rating);
-//  console.log(apartment.owner.name);
-//  console.log(apartment.tags);
-//  const book = {
-//    title: "The Last Kingdom",
-//    author: "Bernard Cornwell",
-//    genres: ["historical prose", "adventure"],
-//    isPublic: true,
-//    rating: 8.38,
-//  };
-//
-//  book.pageCount = 836;
-//  book.originalLanguage = "en";
-//  book.translations = ["ua", "ru"];
-//  book.price = {
-//    hardcover: 39,
-//    softcover: 29,
-//  };
-//
-//  console.log(book.pageCount); // 836
-//  console.log(book.originalLanguage); // "en"
-//  console.log(book.translations); // ["ua", "ru"]
-//  console.log(book); // { hardcover: 39, softcover: 29 }
-//  const apartment = {
-//    imgUrl: "https://via.placeholder.com/640x480",
-//    descr: "Spacious apartment in the city center",
-//    rating: 4.7,
-//    price: 5000,
-//    tags: ["premium", "promoted", "top", "trusted"],
-//    owner: {
-//      name: "Henry Sibola",
-//      phone: "982-126-1588",
-//      email: "henry.carter@aptmail.com",
-//    },
-//  };
-//
-//
-//  apartment.area = 60;
-//  apartment.rooms = 3;
-//  apartment.location = {
-//    country: "Jamaica",
-//    city: "Ocho Rios",
-//  };
-//
-//  console.log(apartment.area);
-//  console.log(apartment.rooms);
-//  console.log(apartment.location);
-//
-//  const name = "Repair Droid";
-//  const price = 2500;
-//  const image = "https://via.placeholder.com/640x480";
-//  const tags = ["on sale", "trending", "best buy"];
-//
-//  const product = {
-//    name,
-//    price,
-//    image,
-//    tags,
-//  };
-//
-//  console.log(product);
-//  console.log(product.name);
-//  console.log(product.price);
-//  console.log(product.image);
-//  console.log(product.tags);
-//   const emailInputName = "email";
-//   const passwordInputName = "password";
-//
-//   const credentials = {
-//     [emailInputName]: "henry.carter@aptmail.com",
-//     [passwordInputName]: "jqueryismyjam",
-//   };
-//  const book = {
-//    title: "The Last Kingdom",
-//    author: "Bernard Cornwell",
-//    genres: ["historical prose", "adventure"],
-//    rating: 8.38,
-//  };
-//
-//  for (const key in book) {
-//    console.log(key); // Ключ
-//    console.log(book[key]);  // Значення властивості з таким ключем
+//  
+//  function makeJuice() {
+//    console.log("Сік готовий!");
 //  }
-//  const apartment = {
-//    descr: "Spacious apartment in the city center",
-//    rating: 4,
-//    price: 2153,
-//  };
-//
-//  const keys = [];
-//  const values = [];
-//  for (const key in apartment) {
-//    keys.push(key);
-//    values.push(apartment[key]);
+//  
+//  function order(callback) {
+//    console.log("Приймаємо замовлення...");
+//    callback();
 //  }
-//
-//  console.log(keys); // ["descr", "rating", "price"]
-//  console.log(values); // ["Spacious apartment in the city center", 4, 2153]
-//  const book = {
-//    title: 'The Last Kingdom',
-//    author: 'Bernard Cornwell',
-//    genres: ['historical prose', 'adventure'],
-//    isPublic: true,
-//    rating: 8.38,
-//  };
-//
-//  const keys = Object.keys(book);
-//  //console.log(keys);
-//  for(const key of keys) {
-//    console.log(key);
+//  
+//  order(makeCoffee); // Приймаємо замовлення... Кава готова!
+//  order(makeJuice);  // Приймаємо замовлення... Сік готовий!
+
+//==============================================================================
+
+//  function doWork(callback) {
+//    console.log("Починаємо роботу...");
+//    callback();
 //  }
-//  const apartment = {
-//    descr: "Spacious apartment in the city center",
-//    rating: 4,
-//    price: 2153,
-//  };
-//  const values = [];
-//  const keys = Object.keys(apartment);
-//
-//  for(const key of keys) {
-//    values.push(apartment[key]);
+//  
+//  function cleanRoom() {
+//    console.log("Прибираємо кімнату");
 //  }
-//  console.log(values);
-//  function countProps(object) {
-//    re
-//turn Object.keys(object).length;
+//  function washDishes() {
+//    console.log("Моємо посуд");
 //  }
-//  const book = {
-//    title: "The Last Kingdom",
-//    author: "Bernard Cornwell",
-//    rating: 8.38,
-//  };
-//  const keys = Object.keys(book);
-//  console.log(keys);
-//
-//  const values = Object.values(book);
-//  console.log(values);
-//-----------------------------------------------------------------------------
-// 1. Виведи всі ключі
-// 2. Виведи всі значення
-// 3. Порахуй суму всіх числових значень
-//  const user = {
-//    name: "Іван",
-//    age: 25,
-//    city: "Київ",
-//    isOnline: true,
-//  };
-//   const keys = Object.keys(user);
-//    console.log(keys);
-//  const  value = Object.values(user);
-//  console.log(value);
-//  const length = Object.keys(user).length;
-//  console.log(length);
-//-------------------------------------------------------------------------------------
-// 1. Виведи всі ключі
-// 2. Виведи всі значення
-// 3. Виведи тільки перший ключ
-// 4. Виведи тільки останнє значення
-//  const product = {
-//    name: "Телефон",
-//    price: 500,
-//    brand: "Samsung",
-//    inStock: true,
-//  };
-//
-//  const keys = Object.keys(product);
-//  console.log(keys);
-//  const length = Object.keys(product)[0];
-//  console.log(length);
-//  const lastValue = Object.values(product)[Object.values(product).length - 1];
-//  console.log(lastValue);
-//  const values = Object.values(product);
-//  console.log(values);
-//---------------------------------------------------------------------------------------------------
-// 1. Виведи всі ключі
-// 2. Виведи всі значення
-// 3. Порахуй суму всіх числових значень
-//  const movie = {
-//    title: "Inception",
-//    director: "Christopher Nolan",
-//    year: 2010,
-//    rating: 9.2,
-//  };
-//
-//  const keys =Object.keys(movie);
-//  console.log(keys);
-//  const values = Object.values(movie);
-//  console.log(values);
-//  let sum = 0;
-//  for (const value of values) {
-//    if (typeof value === "number") {
-//      sum += value;
-//    }
+//  doWork(cleanRoom); // Починаємо роботу... Прибираємо кімнату
+//  doWork(washDishes); // Починаємо роботу... Моємо посуд
+
+//==============================================================================
+//  
+//  function calculate(a, b, callback) {
+//    return callback(a, b);
 //  }
-//  console.log(sum);
-//-------------------------------------------------------------------------------------
-//  const apartment = {
-//    descr: "Spacious apartment in the city center",
-//    rating: 4,
-//    price: 2153,
-//  };
-//
-//  const keys = apartment;
-//  const values = apartment;
-//  apartment.keys = Object.keys(apartment);
-//  apartment.values = Object.values(apartment);
-//
-//  console.log(apartment.keys);
-//  console.log(apartment.values);
-//--------------------------------------------------------------------------------------------------
-//  function countTotalSalary(salaries) {
-//    let totalSalary = 0;
-//    const salaryValues = Object.values(salaries);
-//    for (const salary of salaryValues) {
-//      totalSalary += salary;
-//    }
-//    return totalSalary;
+//  
+//  function add(a, b) {
+//    return a + b;
 //  }
-//
-//  console.log(countTotalSalary({}));
-//  console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
-//  console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
-//------------------------------------------------------------------------------------------------
-//  const books = [
-//    {
-//      title: "The Last Kingdom",
-//      author: "Bernard Cornwell",
-//      rating: 8.38,
-//    },
-//    {
-//      title: "Beside Still Waters",
-//      author: "Robert Sheckley",
-//      rating: 8.51,
-//    },
-//    {
-//      title: "The Tell-Tale Heart",
-//      author: "Edgar Allan Poe",
-//      rating: 7.75,
-//    }
+//  
+//  function multiply(a, b) {
+//    return a * b;
+//  }
+//  console.log(calculate(5, 3, add)); // 8
+//  console.log(calculate(5, 3, multiply)); // 15
+
+//==============================================================================
+
+//  const users = [
+//    { name: "Іван", age: 25 },
+//    { name: "Марія", age: 17 },
+//    { name: "Олег", age: 30 },
+//    { name: "Аня", age: 15 },
 //  ];
-//
-//  for (const book of books) {
-//    //console.log(book); // Об'єкт книги
-//    //console.log(book.title); // Назва
-//    //console.log(book.author); // Автор
-//    //console.log(book.rating); // Рейтинг
-//  }
-//
-//  for (const book of books) {
-//    //console.log(book.title);
-//  }
-//  console.log(firstBook = books[0]);
-//  console.log(firstBook.title);
-//  console.log(firstBook.author);
-//==================================================================================================
-//  const colors = [
-//    { hex: "#f44336", rgb: "244,67,54" },
-//    { hex: "#2196f3", rgb: "33,150,243" },
-//    { hex: "#4caf50", rgb: "76,175,80" },
-//    { hex: "#ffeb3b", rgb: "255,235,59" },
-//  ];
-//
-//  const hexColors = [];
-//  const rgbColors = []
-//  for (const color of colors) {  hexColors.push(color.hex);
-//    rgbColors.push(color.rgb);
-//  }
-//
-//  console.log(hexColors); // ["#f44336", "#2196f3", "#4caf50", "#ffeb3b"]
-//  console.log(rgbColors); // ["244,67,54", "33,150,243", "76,175,80", "255,235,59"]
-//================================================================================================
-//  const books = [
-//    { title: "The Last Kingdom", author: "Bernard Cornwell" },
-//    { title: "Beside Still Waters", author: "Robert Sheckley" },
-//    { title: "The Tell-Tale Heart", author: "Edgar Allan Poe" }
-//  ];
-//
-//  const authorToSearchFor = "Robert Sheckley";
-//
-//  for (const book of books) {
-//    if (book.author === authorToSearchFor) {
-//      console.log(`Found the book by ${authorToSearchFor}: ${book.title}`);
-//      break; // Виходимо з циклу після знаходження книги
-//    }
-//  }
-//================================================================================================
-//
-//  function getProductPrice(productName) {
-//    const products = [
-//      { name: "Radar", price: 1300, quantity: 4 },
-//      { name: "Scanner", price: 2700, quantity: 3 },
-//      { name: "Droid", price: 400, quantity: 7 },
-//      { name: "Grip", price: 1200, quantity: 9 },
-//    ];
-//
-//    for (const product of products) {
-//      if (product.name === productName) {
-//        return product.price;
+//  
+//  function filterUsers(users, callback) {
+//    const filteredUsers = [];
+//    for (const user of users) {
+//      if (callback(user)) {
+//        filteredUsers.push(user);
 //      }
 //    }
-//
-//    return null; // Return null if product is not found
+//    return filteredUsers;
 //  }
-//
-//  console.log(getProductPrice("Radar"));
-//  console.log(getProductPrice("Grip"));
-//  console.log(getProductPrice("Scanner"));
-//  console.log(getProductPrice("Droid"));
-//  console.log(getProductPrice("Engine")); // null
-//==================================================================================================
-//  const books = [
-//    { title: "The Last Kingdom", author: "Bernard Cornwell", rating: 8.2 },
-//    { title: "Beside Still Waters", author: "Robert Sheckley", rating: 9 },
-//    { title: "The Tell-Tale Heart", author: "Edgar Allan Poe", rating: 6.8 }
-//  ];
-//
-//  const titles = [];
-//  for (const book of books) {
-//    titles.push(book.title)
+//  function isAdult(user) {
+//    return user.age >= 18;
 //  }
-//  console.log(titles);
-//
-//  //
-//================================================================================================
-//  const books = [
-//    { title: "The Last Kingdom", author: "Bernard Cornwell", rating: 8.2 },
-//    { title: "Beside Still Waters", author: "Robert Sheckley", rating: 9 },
-//    { title: "The Tell-Tale Heart", author: "Edgar Allan Poe", rating: 6.8 }
-//  ];
-//
-//  let totalRating = 0;
-//
-//  for (const book of books) {
-//    totalRating += book.rating;
+//  
+//  const adults = filterUsers(users, isAdult);
+//  console.log(adults); // [{ name: "Іван", age: 25 }, { name: "Олег", age: 30 }]
+
+//==============================================================================
+
+// Окремо
+//  function eatPizza(pizzaName) {
+//    console.log(`Eating pizza ${pizzaName}`);
 //  }
-//
-//  const averageRating = totalRating / books.length;
-//  console.log(averageRating);
-//==================================================================================================
-//  function getAllPropValues(propName) {
-//    const products = [
-//      { name: "Radar", price: 1300, quantity: 4 },
-//      { name: "Scanner", price: 2700, quantity: 3 },
-//      { name: "Droid", price: 400, quantity: 7 },
-//      { name: "Grip", price: 1200, quantity: 9 },
-//    ];
-//
-//    const values = [];
-//    for (const product of products) {
-//      if (propName in product) {
-//        values.push(product[propName]);
-//      }
-//    }
-//    return values;
+//  
+//  // І потім передавати
+//  eatPizza("Ultracheese");
+
+//==============================================================================
+
+//  makePizza("Ultracheese", function eatPizza(pizzaName) {
+//    console.log(`Eating pizza ${pizzaName}`);
+//  });
+//  
+//  
+//  makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//    console.log(`Delivering pizza ${pizzaName}`);
+//  });
+//  
+//  function makePizza(pizzaName, callback) {
+//    console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//    callback(pizzaName);
 //  }
-//
-//  console.log(getAllPropValues("name"));
-//  console.log(getAllPropValues("quantity"));
-//  console.log(getAllPropValues("price"));
-//  console.log(getAllPropValues("category"));
-//==================================================================================================
-//  function calculateTotalPrice(productName) {
-//    const products = [
-//      { name: "Radar", price: 1300, quantity: 4 },
-//      { name: "Scanner", price: 2700, quantity: 3 },
-//      { name: "Droid", price: 400, quantity: 7 },
-//      { name: "Grip", price: 1200, quantity: 9 },
-//    ];
-//    for (const product of products) {
-//      if (product.name === productName) {
-//        return product.price * product.quantity;
-//      }
-//    }
-//    return `Product ${productName} not found!`;
+
+//==============================================================================
+
+//  const numbers = [5, 10, 15, 20, 25];
+//  
+//  // Класичний for
+//  for (let i = 0; i < numbers.length; i += 1) {
+//    console.log(`Index ${i}, value ${numbers[i]}`);
 //  }
-//
-//  console.log(calculateTotalPrice("Blaster"));
-//  console.log(calculateTotalPrice("Radar"));
-//  console.log(calculateTotalPrice("Droid"));
-//  console.log(calculateTotalPrice("Grip"));
-//  console.log(calculateTotalPrice("Scanner"));
-//==================================================================================================
-//  const atTheOldToad = {
-//    potions: [],
-//    getPotions() {
-//      return "List of all available potions";
-//    },
-//    addPotion(potionName) {
-//      return `Adding ${potionName}`;
-//    },
-//  };
-//
-//  console.log(atTheOldToad.getPotions());
-//  console.log(atTheOldToad.addPotion("Invisibility"));
-//  console.log(atTheOldToad.addPotion("Invisibility"));
-//  console.log(atTheOldToad.addPotion("Power potion"));
-//==================================================================================================
-//  const bookShelf = {
-//    books: ["The Last Kingdom", "The Mist"],
-//    getBooks() {
-//      console.log(this);
-//    },
-//  };
-//
-//  bookShelf.getBooks(); // {books: ["The Last Kingdom", "The Mist"], getBooks: f}
-//==================================================================================================
-//  const bookShelf = {
-//    books: ["The Last Kingdom", "The Mist"],
-//    getBooks() {
-//      return this.books;
-//    }
-//  };
-//
-//  //console.log(bookShelf.getBooks()); // ["The Last Kingdom", "The Mist"]
-//  // ["The Last Kingdom", "The Mist"]
-//==================================================================================================
-//  const atTheOldToad = {
-//    potions: ["Speed potion", "Stone skin"],
-//    getPotions() {
-//      return this.potions;
-//    },
-//  };
-//  console.log(atTheOldToad.getPotions()); // ["Speed potion", "Stone skin"]
-//==================================================================================================
-//  const bookShelf = {
-//    books: ["The Last Kingdom"],
-//    getBooks() {
-//      return this.books;
-//    },
-//    addBook(bookName) {
-//      this.books.push(bookName);
-//    }
-//  };
-//
-//  console.log(bookShelf.getBooks());
-//  bookShelf.addBook("The Mist");
-//  bookShelf.addBook("Dream Guardian");
-//  console.log(bookShelf.getBooks());
-//==================================================================================================
-//  const atTheOldToad = {
-//    potions: ["Speed potion", "Stone skin"],
-//    getPotions() {
-//      return this.potions;
-//    },
-//    addPotion(potionName) {},
-//  };
-//==================================================================================================
-//  const user = {
-//      name: 'vitalii',
-//      age: 45,
-//      city: 'limassol',
-//    }
-//
-//  console.log(user.name);
-//  console.log(user.age);
-//  console.log(user.city);
-//==================================================================================================
-//  const product = {
-//    name: "Ноутбук",
-//    price: 1500,
-//    inStock: true,
-//  };
-//
-//
-//  for (const key in product) {
-//    console.log(key);
-//    console.log(product[key]);
-//    console.log(Object.keys(product).length);
-//  }
-//==================================================================================================
+//  
+//  // Перебираючий метод forEach
+//  numbers.forEach(function (number, index) {
+//    console.log(`Index ${index}, value ${number}`);
+//  });
+
+//==============================================================================
+
+//  const fruits = ["apple", "banana", "orange", "mango"];
+//  
+//  fruits.forEach(function (fruit) {
+//    console.log(`Фрукт: ${fruit}`);
+//  })
+
+//==============================================================================
+
+//  const prices = [100, 200, 300, 400, 500];
+//  prices.forEach(function (price, index) {
+//    console.log(`Товар ${index + 1} коштує ${price} грн`);
+//  });
+
+//==============================================================================
+
 //  const users = [
 //    { name: "Іван", age: 25 },
 //    { name: "Марія", age: 30 },
 //    { name: "Олег", age: 22 },
 //  ];
-//
-//
-//  for (const user of users) {
-//    console.log(user.name);
-//  }
-//
-//  for (const user of users) {
-//    if (user.age > 24) {
-//      console.log(user.name);
+//  users.forEach(function (user) {
+//  console.log(` ${user.name} має  ${user.age} років`); 
+//  })
+
+//==============================================================================
+
+//  const products = [
+//    { name: "Ноутбук", price: 1500, inStock: true },
+//    { name: "Телефон", price: 800, inStock: false },
+//    { name: "Планшет", price: 600, inStock: true },
+//    { name: "Навушники", price: 200, inStock: false },
+//  ];
+//  
+//  products.forEach(function (product) {
+//    if (product.inStock) {
+//      console.log(`${product.name} - ${product.price} грн`);
 //    }
-//  }
+//  });
 
-//==================================================================================
+//==============================================================================  
 
-
-//  const calculator = {
-//   add(a, b) {
-//     return a + b;
-//   },
-//   multiply(a, b) {
-//     return a * b;
-//   }
-//  }//  
-//  console.log(calculator.add(2, 3)); 
-//  console.log(calculator.multiply(4, 5)); 
-
-//==================================================================================
-
-//  const userProfile = {
-//    name: "John Doe",
-//    age: 30,
-//    city: "New York",
-//    getInfo() {
-//      return `Name: ${this.name}, Age: ${this.age}, City: ${this.city}`;
+//  const orders = [
+//    { id: 1, product: "Піца", status: "delivered" },
+//    { id: 2, product: "Суші", status: "pending" },
+//    { id: 3, product: "Бургер", status: "delivered" },
+//    { id: 4, product: "Паста", status: "pending" },
+//  ];
+//  
+//  orders.forEach(function (order) {
+//    if (order.status === 'delivered') {
+//      console.log(`Замовлення ${order.id}: - ${order.product} доставлено`);
 //    }
-//  };
-//  
-//  console.log(userProfile.getInfo());
+//  })
 
 //==================================================================================
-
-//  const cart = {
-//    items: [],
-//    totalPrice: 0,
-//    addItems(name, price) {
-//      this.items.push(name);
-//      this.totalPrice += price;
-//    },
-//    getTotalPrice() {
-//      return this.totalPrice;
-//    }
-//  }
-//  
-//  cart.addItems("Laptop", 1500);
-//  cart.addItems("Phone", 800);
-//  cart.addItems("Headphones", 200);
-//  
-//  console.log(cart.getTotalPrice()); 
-//  console.log(cart.items); 
-
-//==================================================================================
-
-//  const fruits = ["apple", "banana", "orange"];
-//  const vegetables = ["carrot", "potato", "tomato"];
-//  const allProducts = [...fruits, ...vegetables];
-//  console.log(allProducts); // ["apple", "banana", "orange", "carrot", "potato", "tomato"]
-
-//==================================================================================
-
-//  const userInfo = {
-//    name: "Іван",
-//    age: 25,
-//  };
-//  
-//  const userContacts = {
-//    email: "ivan@gmail.com",
-//    phone: "+380991234567",
-//  };
-//  
-//  const user = { ...userInfo, ...userContacts };
-//  console.log(user); 
-
-//==================================================================================
-// function sum(...args) {
-//   let total = 0;
-//   for (const arg of args) {
-//     total += arg;
-//   }
-//   return total;
-// }
-// console.log(sum(1, 2, 3));        // 6
-// console.log(sum(1, 2, 3, 4, 5));  // 15
-// console.log(sum(10, 20));         // 30
-
-//==================================================================================
-
-//  function multiply(multiplier, ...numbers) {
-//    return numbers.map(number => number * multiplier);    
-//  } 
-//  
-//  console.log(multiply(2, 1, 2, 3));   
-//  console.log(multiply(3, 1, 2, 3));
-//  console.log(multiply(10, 1, 2, 3)); 
-
-//==================================================================================
-
-//  function makePizza() {
-//    return "Your pizza is being prepared, please wait.";
-//  }
-//  
-//  const result = makePizza();
-//  const pointer = makePizza;
-//  
-//  console.log(result);
-//  console.log(pointer);
-
-//==================================================================================
-
-//  function greet(name) {
-//    console.log(`Hello, ${name}!`);
-//  }
-//  
-//  function notify(name) {
-//    console.log(`Dear ${name}, your room will be ready in 30 minutes`);
-//  }
-//  
-//  function registerGuest(name, callback) {
-//    console.log(`Registering ${name}!`);
-//    callback(name);
-//  }
-//  
-//  registerGuest("Mango", greet);
-//  registerGuest("Mango", notify);
-
-//==================================================================================
-
-//  function deliverPizza(pizzaName) {
-//    return `Delivering ${pizzaName} pizza.`;
-//  }
-//  
-//  function makePizza(pizzaName) {
-//    return `Pizza ${pizzaName} is being prepared, please wait...`;
-//  }
-//  
-//  function makeMessage(pizzaName, callback) {
-//    return callback(pizzaName);
-//  }
-//   makeMessage("Royal Grand", makePizza)
-//   console.log(makeMessage("Royal Grand", makePizza));
-//   makeMessage("Ultracheese", deliverPizza)
-//   console.log(makeMessage("Ultracheese", deliverPizza));
-
-//====================================================================
-//  
-//  function calculateTotalPrice(orderedItems) {
-//    let totalPrice = 0;
-//  
-//    orderedItems.forEach(function (item) {
-//      totalPrice += item;
-//    });
-//  
-//    return totalPrice;
-//  }
-//  calculateTotalPrice([12, 85, 37, 4])
-//  console.log(calculateTotalPrice([12, 85, 37, 4]));
-//  calculateTotalPrice([164, 48, 291])
-//  console.log(calculateTotalPrice([164, 48, 291]));
-//  calculateTotalPrice([412, 371, 94, 63, 176])
-//  console.log(calculateTotalPrice([412, 371, 94, 63, 176]));   
-
-//==================================================================================
-
-//  function filterArray(numbers, value) {
-//    const filteredNumbers = [];
-//  
-//    numbers.forEach(function (number) {
-//      if (number > value) {
-//        filteredNumbers.push(number);
-//      }
-//    });
-//  
-//    return filteredNumbers; 
-//  }
-//  
-//  filterArray([1, 2, 3, 4, 5], 3)
-//  console.log(filterArray([1, 2, 3, 4, 5], 3));
-//  filterArray([1, 2, 3, 4, 5], 4)
-//  console.log(filterArray([1, 2, 3, 4, 5], 4));
-//  filterArray([1, 2, 3, 4, 5], 5)
-//  console.log(filterArray([1, 2, 3, 4, 5], 5));
-//  filterArray([12, 24, 8, 41, 76], 38)
-//  console.log(filterArray([12, 24, 8, 41, 76], 38));
-//  filterArray([12, 24, 8, 41, 76], 20)
-//  console.log(filterArray([12, 24, 8, 41, 76], 20));
-
-//==================================================================================
-
-//  function classicAdd(a, b, c) {
-//    return a + b + c;
-//  }
-//  classicAdd(1, 2, 3);
-//  console.log(classicAdd(1, 2, 3));
-//  
-//  const arrowAdd = (a, b, c) => {
-//    return a + b + c;
-//  }
-//  arrowAdd(1, 2, 3);
-//  console.log(arrowAdd(1, 2, 3));
-//  
-//  const add = a => {
-//    return a + 5;
-//  }
-//  add(1);
-//  console.log(add(1));
-
-//==================================================================================
-
-//  const calculateTotalPrice = (quantity, pricePerItem) => {
-//    return quantity * pricePerItem;
-//  }
-//  
-//  calculateTotalPrice(5, 100)
-//  console.log(calculateTotalPrice(5, 100));
-//  calculateTotalPrice(8, 60)
-//  console.log(calculateTotalPrice(8, 60));
-//  calculateTotalPrice(3, 400)
-//  console.log(calculateTotalPrice(3, 400)); 
-
-//==================================================================================
-
-
-//  // До
-//  function classicAdd(a, b, c) {
-//    return a + b + c;
-//  }
-//  
-//  // Після
-//  const arrowAdd = (a, b, c) => a + b + c;
-//  console.log(arrowAdd(1, 2, 3)); 
-
-//==================================================================================
-
-//  const calculateTotalPrice = (quantity, pricePerItem) =>  quantity * pricePerItem;
-//  console.log(calculateTotalPrice(5, 100));
-//  console.log(calculateTotalPrice(8, 60));
-//  console.log(calculateTotalPrice(3, 400)); 
-
-//==================================================================================
-
-//  const add = (...args) => {
-//    console.log(args);
-//  };
-//  
-//  add(1, 2, 3); // [1, 2, 3]
-
-//==================================================================================
-
-//  const numbers = [5, 10, 15, 20, 25];
-//  
-//  const logMessage = (number, index) => {
-//    console.log(`Index ${index}, value ${number}`);
-//  };
-//  
-//  numbers.forEach(logMessage);
-
-//==================================================================================
-
-
-//  const calculateTotalPrice = (orderedItems) => {
-//    let totalPrice = 0;
-//  
-//    orderedItems.forEach(item => totalPrice += item);
-//  
-//    return totalPrice;
-//  }
-//  
-//  calculateTotalPrice([12, 85, 37, 4])
-//  console.log(calculateTotalPrice([12, 85, 37, 4]));
-//  calculateTotalPrice([164, 48, 291])
-//  console.log(calculateTotalPrice([164, 48, 291]));
-//  calculateTotalPrice([412, 371, 94, 63, 176])
-//  console.log(calculateTotalPrice([412, 371, 94, 63, 176]));  
-
-//==================================================================================
-
-//  const filterArray = (numbers, value) => {
-//    const filteredNumbers = [];
-//    numbers.forEach((number) => {
-//      if (number > value) {
-//        filteredNumbers.push(number);
-//      }
-//    });
-//    return filteredNumbers;
-//  }
-//  
-//  filterArray([1, 2, 3, 4, 5], 3)
-//  console.log(filterArray([1, 2, 3, 4, 5], 3));
-//  filterArray([1, 2, 3, 4, 5], 4)
-//  console.log(filterArray([1, 2, 3, 4, 5], 4)); 
-//  filterArray([1, 2, 3, 4, 5], 5)
-//  console.log(filterArray([1, 2, 3, 4, 5], 5)); 
-//  filterArray([12, 24, 8, 41, 76], 38)
-//  console.log(filterArray([12, 24, 8, 41, 76], 38)); 
-//  filterArray([12, 24, 8, 41, 76], 20)
-//  console.log(filterArray([12, 24, 8, 41, 76], 20));
-
-//==================================================================================
-
-//  const pureMultiply = (array, value) => {
-//    const newArray = [];
-//  
-//    array.forEach(element => {
-//      newArray.push(element * value);
-//    });
-//  
-//    return newArray;
-//  };
-//  
-//  const numbers = [1, 2, 3, 4, 5];
-//  const doubledNumbers = pureMultiply(numbers, 2);
-//  
-//  // Мутація вихідних даних не відбулася
-//  console.log(numbers); // [1, 2, 3, 4, 5]
-//  // Функція повернула новий масив зі зміненими даними
-//  console.log(doubledNumbers); // [2, 4, 6, 8, 10]
-
-//==================================================================================
-
