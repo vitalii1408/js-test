@@ -2151,3 +2151,159 @@ function calculateTotalPrice(order) {
 
 //==================================================================================
 
+//  function filterArray(numbers, value) {
+//    const filteredNumbers = [];
+//  
+//    numbers.forEach(function (number) {
+//      if (number > value) {
+//        filteredNumbers.push(number);
+//      }
+//    });
+//  
+//    return filteredNumbers; 
+//  }
+//  
+//  filterArray([1, 2, 3, 4, 5], 3)
+//  console.log(filterArray([1, 2, 3, 4, 5], 3));
+//  filterArray([1, 2, 3, 4, 5], 4)
+//  console.log(filterArray([1, 2, 3, 4, 5], 4));
+//  filterArray([1, 2, 3, 4, 5], 5)
+//  console.log(filterArray([1, 2, 3, 4, 5], 5));
+//  filterArray([12, 24, 8, 41, 76], 38)
+//  console.log(filterArray([12, 24, 8, 41, 76], 38));
+//  filterArray([12, 24, 8, 41, 76], 20)
+//  console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+//==================================================================================
+
+//  function classicAdd(a, b, c) {
+//    return a + b + c;
+//  }
+//  classicAdd(1, 2, 3);
+//  console.log(classicAdd(1, 2, 3));
+//  
+//  const arrowAdd = (a, b, c) => {
+//    return a + b + c;
+//  }
+//  arrowAdd(1, 2, 3);
+//  console.log(arrowAdd(1, 2, 3));
+//  
+//  const add = a => {
+//    return a + 5;
+//  }
+//  add(1);
+//  console.log(add(1));
+
+//==================================================================================
+
+//  const calculateTotalPrice = (quantity, pricePerItem) => {
+//    return quantity * pricePerItem;
+//  }
+//  
+//  calculateTotalPrice(5, 100)
+//  console.log(calculateTotalPrice(5, 100));
+//  calculateTotalPrice(8, 60)
+//  console.log(calculateTotalPrice(8, 60));
+//  calculateTotalPrice(3, 400)
+//  console.log(calculateTotalPrice(3, 400)); 
+
+//==================================================================================
+
+
+//  // До
+//  function classicAdd(a, b, c) {
+//    return a + b + c;
+//  }
+//  
+//  // Після
+//  const arrowAdd = (a, b, c) => a + b + c;
+//  console.log(arrowAdd(1, 2, 3)); 
+
+//==================================================================================
+
+//  const calculateTotalPrice = (quantity, pricePerItem) =>  quantity * pricePerItem;
+//  console.log(calculateTotalPrice(5, 100));
+//  console.log(calculateTotalPrice(8, 60));
+//  console.log(calculateTotalPrice(3, 400)); 
+
+//==================================================================================
+
+//  const add = (...args) => {
+//    console.log(args);
+//  };
+//  
+//  add(1, 2, 3); // [1, 2, 3]
+
+//==================================================================================
+
+//  const numbers = [5, 10, 15, 20, 25];
+//  
+//  const logMessage = (number, index) => {
+//    console.log(`Index ${index}, value ${number}`);
+//  };
+//  
+//  numbers.forEach(logMessage);
+
+//==================================================================================
+
+
+//  const calculateTotalPrice = (orderedItems) => {
+//    let totalPrice = 0;
+//  
+//    orderedItems.forEach(item => totalPrice += item);
+//  
+//    return totalPrice;
+//  }
+//  
+//  calculateTotalPrice([12, 85, 37, 4])
+//  console.log(calculateTotalPrice([12, 85, 37, 4]));
+//  calculateTotalPrice([164, 48, 291])
+//  console.log(calculateTotalPrice([164, 48, 291]));
+//  calculateTotalPrice([412, 371, 94, 63, 176])
+//  console.log(calculateTotalPrice([412, 371, 94, 63, 176]));  
+
+//==================================================================================
+
+//  const filterArray = (numbers, value) => {
+//    const filteredNumbers = [];
+//    numbers.forEach((number) => {
+//      if (number > value) {
+//        filteredNumbers.push(number);
+//      }
+//    });
+//    return filteredNumbers;
+//  }
+//  
+//  filterArray([1, 2, 3, 4, 5], 3)
+//  console.log(filterArray([1, 2, 3, 4, 5], 3));
+//  filterArray([1, 2, 3, 4, 5], 4)
+//  console.log(filterArray([1, 2, 3, 4, 5], 4)); 
+//  filterArray([1, 2, 3, 4, 5], 5)
+//  console.log(filterArray([1, 2, 3, 4, 5], 5)); 
+//  filterArray([12, 24, 8, 41, 76], 38)
+//  console.log(filterArray([12, 24, 8, 41, 76], 38)); 
+//  filterArray([12, 24, 8, 41, 76], 20)
+//  console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+//==================================================================================
+
+//  const pureMultiply = (array, value) => {
+//    const newArray = [];
+//  
+//    array.forEach(element => {
+//      newArray.push(element * value);
+//    });
+//  
+//    return newArray;
+//  };
+//  
+//  const numbers = [1, 2, 3, 4, 5];
+//  const doubledNumbers = pureMultiply(numbers, 2);
+//  
+//  // Мутація вихідних даних не відбулася
+//  console.log(numbers); // [1, 2, 3, 4, 5]
+//  // Функція повернула новий масив зі зміненими даними
+//  console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+
+//==================================================================================
+
