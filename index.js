@@ -459,3 +459,24 @@ console.log(createReversedArray());
 //  console.log(calculateTax(200));
 
 //=========================================================
+
+//  function sayHello() {
+//    console.log("Привіт!");
+//  }
+//  
+//  function sayBye() {
+//    console.log("Бувай!");
+//  }
+//  
+//  function greet(callback) {
+//    console.log("Починаємо...");
+//    callback();
+//  }
+//  
+//  // Твоє завдання — просто викликати greet двічі:
+//  greet(sayHello); // перший виклик
+//  greet(sayBye); 
+
+//=========================================================
+
+
