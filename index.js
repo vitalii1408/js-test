@@ -2084,3 +2084,51 @@ function calculateTotalPrice(order) {
 //  console.log(multiply(10, 1, 2, 3)); 
 
 //==================================================================================
+
+//  function makePizza() {
+//    return "Your pizza is being prepared, please wait.";
+//  }
+//  
+//  const result = makePizza();
+//  const pointer = makePizza;
+//  
+//  console.log(result);
+//  console.log(pointer);
+
+//==================================================================================
+
+//  function greet(name) {
+//    console.log(`Hello, ${name}!`);
+//  }
+//  
+//  function notify(name) {
+//    console.log(`Dear ${name}, your room will be ready in 30 minutes`);
+//  }
+//  
+//  function registerGuest(name, callback) {
+//    console.log(`Registering ${name}!`);
+//    callback(name);
+//  }
+//  
+//  registerGuest("Mango", greet);
+//  registerGuest("Mango", notify);
+
+//==================================================================================
+
+//  function deliverPizza(pizzaName) {
+//    return `Delivering ${pizzaName} pizza.`;
+//  }
+//  
+//  function makePizza(pizzaName) {
+//    return `Pizza ${pizzaName} is being prepared, please wait...`;
+//  }
+//  
+//  function makeMessage(pizzaName, callback) {
+//    return callback(pizzaName);
+//  }
+//   makeMessage("Royal Grand", makePizza)
+//   console.log(makeMessage("Royal Grand", makePizza));
+//   makeMessage("Ultracheese", deliverPizza)
+//   console.log(makeMessage("Ultracheese", deliverPizza));
+
+//==================================================================================
