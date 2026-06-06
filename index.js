@@ -1264,3 +1264,77 @@ const b = a;
   
 //  ==============================================================================
 
+//  function makeCoffee() {
+//    console.log("Кава готова!");
+//  }
+//  
+//  function makeJuice() {
+//    console.log("Сік готовий!");
+//  }
+//  
+//  function order(callback) {
+//    console.log("Приймаємо замовлення...");
+//    callback();
+//  }
+//  
+//  order(makeCoffee); // Приймаємо замовлення... Кава готова!
+//  order(makeJuice);  // Приймаємо замовлення... Сік готовий!
+
+//==============================================================================
+
+//  function doWork(callback) {
+//    console.log("Починаємо роботу...");
+//    callback();
+//  }
+//  
+//  function cleanRoom() {
+//    console.log("Прибираємо кімнату");
+//  }
+//  function washDishes() {
+//    console.log("Моємо посуд");
+//  }
+//  doWork(cleanRoom); // Починаємо роботу... Прибираємо кімнату
+//  doWork(washDishes); // Починаємо роботу... Моємо посуд
+
+//==============================================================================
+//  
+//  function calculate(a, b, callback) {
+//    return callback(a, b);
+//  }
+//  
+//  function add(a, b) {
+//    return a + b;
+//  }
+//  
+//  function multiply(a, b) {
+//    return a * b;
+//  }
+//  console.log(calculate(5, 3, add)); // 8
+//  console.log(calculate(5, 3, multiply)); // 15
+
+//==============================================================================
+
+//  const users = [
+//    { name: "Іван", age: 25 },
+//    { name: "Марія", age: 17 },
+//    { name: "Олег", age: 30 },
+//    { name: "Аня", age: 15 },
+//  ];
+//  
+//  function filterUsers(users, callback) {
+//    const filteredUsers = [];
+//    for (const user of users) {
+//      if (callback(user)) {
+//        filteredUsers.push(user);
+//      }
+//    }
+//    return filteredUsers;
+//  }
+//  function isAdult(user) {
+//    return user.age >= 18;
+//  }
+//  
+//  const adults = filterUsers(users, isAdult);
+//  console.log(adults); // [{ name: "Іван", age: 25 }, { name: "Олег", age: 30 }]
+
+//==============================================================================
