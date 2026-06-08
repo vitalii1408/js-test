@@ -1813,4 +1813,32 @@ const b = a;
 
 //===========================================================================================
 
+//  const books = [
+//    {
+//      title: "The Last Kingdom",
+//      author: "Bernard Cornwell",
+//      rating: 8.38,
+//    },
+//    {
+//      title: "Beside Still Waters",
+//      author: "Robert Sheckley",
+//      rating: 8.51,
+//    },
+//    {
+//      title: "The Tell-Tale Heart",
+//      author: "Edgar Allan Poe",
+//      rating: 7.75,
+//    },
+//    { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//  ];
+//  const BOOK_TITLE = "The Tell-Tale Heart";
+//  const AUTHOR = "Robert Sheckley";
+//  
+//  const bookWithTitle = books;
+//  const bookByAuthor = books;
+
+//================================================================
+
+
+
 
