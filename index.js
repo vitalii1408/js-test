@@ -1854,3 +1854,228 @@ const b = a;
 
 //============================================================
 
+//  const user = {
+//    username: "Victor",
+//    showName() {
+//  		// ✅ Віктор біжить швидко, тому що він (this) намагається зловити поїзд.
+//      console.log(this.username);
+//    },
+//  };
+//  
+//  user.showName();
+
+//===============================================
+
+//. const user = {
+//.   name: "Віталій",
+//.   greet() {
+//.     console.log(this.name);
+//.   }
+//. };
+//. 
+//. const fn = user.greet.bind(user); // як виправити цей рядок?
+//. fn();
+
+
+//  const user = { name: "Віталій" };
+//  const admin = { name: "Адмін" };
+//  
+//  function greet() {
+//    console.log(this.name);
+//  }
+//  
+//  greet.call(user);
+//  greet.call(admin);
+
+//==========================================================
+
+//  const car = { brand: "BMW" };
+//  const bike = { brand: "Honda" };
+//  
+//  function showBrand() {
+//    console.log(this.brand);
+//  }
+//  
+//  showBrand.call(bike);
+//  showBrand.call(car);
+
+//=================================================
+
+//  const person = { name: "Олена" };
+//  
+//  function sayAge(age) {
+//    console.log(this.name + " має " + age + " років");
+//  }
+//  
+//  sayAge.call(person, 25);
+//  sayAge.apply(person, [25]);
+ 
+
+//===================================================
+
+//  const user = { name: "Максим" };
+//  
+//  function greet(greeting, punctuation) {
+//    console.log(greeting + ", " + this.name + punctuation);
+//  }
+//  
+//  const boundGreet = greet.bind(user, "Привіт");
+//  boundGreet("!");
+//  boundGreet("?");
+
+//========================================================
+
+//  const timer = {
+//    seconds: 10,
+//    start() {
+//      console.log("Старт! Залишилось: " + this.seconds);
+//    }
+//  };//  
+
+//  const startFn = timer.start.bind(timer);
+//  startFn();
+
+//=======================================================
+
+//let fruits = ["Яблуко", "Апельсин", "Слива"];
+//fruits.push("вишня")
+//console.log(fruits);
+//fruits.shift();
+//console.log(fruits);
+
+//=======================================================
+
+//  console.log("Hello, world!");
+//  setTimeout(() => { 
+//    console.log("This message is delayed by 2 seconds.");
+//  }, 2000)
+//  console.log("This message is logged immediately after the previous one.");
+
+//=======================================================
+//  setTimeout(() => {
+//    console.log("hello world")
+//  }, 1000);
+//  
+//  const TimeoutID = setTimeout (() => {}, 3000)
+//  console.log("Пройшло 2 секунди!")
+//=======================================================
+
+//  setInterval(() => {
+//    console.log("hello")
+//  }, 5000)  
+//  
+//  const intervalID = setInterval(() => {}, 10000);
+//  console.log("Пройшло 10 секунди!");
+
+//=======================================================
+//  let counter = 5;
+//  const intervalID = setInterval(() => {
+//    console.log(counter);
+//    counter -= 1;
+//    if (counter === 0) {
+//      clearInterval(intervalID);
+//      console.log("Пуск");
+//    }
+//  }, 1000);
+
+//=======================================================
+
+//  let i = 0;
+//  
+//  const id = setInterval(() => {
+//    i++;
+//    
+//    if (i % 2 === 0) {
+//      console.log(`${i} — парне`);
+//    }
+//    
+//    if (i === 6) {
+//      clearInterval(id);
+//    }
+//  }, 500);
+
+//=======================================================
+
+//  const greet = (() => {
+//    console.log('hello')
+//  });
+//  const intervalID = setInterval(greet, 1000);
+//  clearInterval(intervalID);
+
+//=======================================================
+
+//  const date = new Date();
+//  console.log(date.getTime()); // 0
+
+//=======================================================
+
+//  const time = Date.now();
+//  console.log(time);
+//  const date = new Date();
+//  console.log(date.getTime()); 
+
+//=======================================================
+
+//  async function loadData() {
+//    try {
+//      const user = await getUser();
+//      const orders = await getOrders(user.id);
+//      console.log(orders);
+//    } catch (error) {
+//      console.log(error);
+//    }
+//  }
+
+//=======================================================
+//  
+//  const promise = new Promise((resolve, reject) => {
+//    setTimeout(() => {
+//      resolve(5);
+//    }, 2000);
+//  });
+//  
+//  promise
+//    .then(value => {
+//      console.log(value); // 5
+//      return value * 2;
+//    })
+//    .then(value => {
+//      console.log(value); // 10
+//      return value * 3;
+//    })
+//    .then(value => {
+//      console.log(value); // 30
+//    })
+//    .catch(error => {
+//      console.log(error);
+//    })
+//    .finally(() => {
+//      console.log("finally");
+//    });
+
+//=======================================================
+
+const premise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve(10)
+  }, 1000)
+}
+);
+
+premise
+  .then(value => {
+    console.log(value);
+    return value * 2;
+  })
+  .then(value => {
+    console.log(value);
+    ret
+  })
+  .catch(error => {
+    console.log(error)
+  })
+  .finally(() => {
+    console.log("finally")
+  })
+        
+
