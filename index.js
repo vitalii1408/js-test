@@ -1879,13 +1879,48 @@ const b = a;
 
 //  const user = { name: "Віталій" };
 //  const admin = { name: "Адмін" };
-//  
+//
 //  function greet() {
 //    console.log(this.name);
 //  }
-//  
+//
 //  greet.call(user);
 //  greet.call(admin);
+
+//==========================================================================================
+
+//  const books = [
+//    {
+//      title: "The Last Kingdom",
+//      author: "Bernard Cornwell",
+//      rating: 8.38,
+//    },
+//    {
+//      title: "Beside Still Waters",
+//      author: "Robert Sheckley",
+//      rating: 8.51,
+//    },
+//    {
+//      title: "The Tell-Tale Heart",
+//      author: "Edgar Allan Poe",
+//      rating: 7.75,
+//    },
+//    { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//  ];
+//  const BOOK_TITLE = "The Tell-Tale Heart";
+//  const AUTHOR = "Robert Sheckley";
+//
+//  const bookWithTitle = books.find((book) => book.title === BOOK_TITLE);
+//  const bookByAuthor = books.find((book) => book.author === AUTHOR);
+//
+//
+//
+//  console.log(bookWithTitle);
+//
+//
+//  console.log(bookByAuthor);
+
+//==========================================================================================
 
 //==========================================================
 
@@ -2079,3 +2114,14 @@ premise
   })
         
 
+//const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+//const authors = ["Tanith Lee", "Bernard Cornwell", "Robert Sheckley", "Edgar Allan Poe"];
+//
+//const ascendingReleaseDates = releaseDates.toSorted((a, b) => a - b);
+//const alphabeticalAuthors = authors.toSorted();
+//
+//console.log(ascendingReleaseDates); // [1967, 1973, 1984, 1997, 2008, 2012, 2016]
+//console.log(alphabeticalAuthors);   // ["Bernard Cornwell", "Edgar Allan Poe", "Robert Sheckley", "Tanith Lee"]
+
+
+// =============================================================================================
